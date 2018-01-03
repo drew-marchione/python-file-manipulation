@@ -8,31 +8,31 @@ print "Current Working Directory:", os.getcwd()
 # Basic File I/O Tutorial and quick reference to popular problems
 
 # Problems
-# 1) Read an entire text file.
-# 2) Read a file one character at a time
+# 1) Read and print an entire text file.
+# 2) Read a file one character at a time.
 # 3) Read first n lines of a file.
 # 4) Append text to a file and display the text.
 # 5) Read a file line by line and store it into a list.
 # 6) Read a file line by line and store it into a variable.
-# 7) Find the longest strings in a file.
+# 7) Find the longest string(s) in a file.
 # 8) Count the number of lines in a text file.
-# 9) Count the frequency of words in a file.  Also display the top 3
+# 9) Count the frequency of words in a file.  Also display the top 3.
 # 10) Count the frequency of letters/numbers/symbols in a file.
 # 11) Count the frequency of equivalent lines in a file.
-# 12) Get the file size of a plain file
-# 13) Write a list to a file
+# 12) Get the file size of a plain file.
+# 13) Write a list to a file.
 # 14) Write a program based on user input that either overwrites, appends to, or does nothing to a file.
 #     If the given file name doesn't exist, create it as a new file and write data to it.
-# 15) Copy the contents of a file to another file
+# 15) Copy the contents of a file to another file.
 # 16) Append a files contents to another file.
 # 17) Reverse contents of a file and write the result to a new file.
 # 18) Determine if a file is closed or not.
-# 19) Write a Python program to read a random line from a file.
+# 19) Read a random line from a file.
 
 # -------------------------------------------------------------------
 
 # Question 1
-# Write a program to read and print an entire text file.
+# Read and print an entire text file.
 
 def read_whole_file(filename):
     try:
@@ -49,7 +49,7 @@ read_whole_file(filename)
 # -------------------------------------------------------------------
 
 # Question 2
-# Read file one character at a time.
+# Read a file one character at a time.
 
 def read_one_char(filename):
     try:
@@ -67,7 +67,7 @@ read_one_char(filename)
 # -------------------------------------------------------------------
 
 # Question 3
-# Write a program to read first n lines of a file.
+# Read first n lines of a file.
 
 def read_n_lines(filename, n):
     try:
@@ -85,7 +85,7 @@ read_n_lines(filename, lineNumber)
 # -------------------------------------------------------------------
 
 # Question 4
-# Write a program to append text to a file and display the text.
+# Append text to a file and display the text.
 # See Q14 to write multiple lines to a file
 
 def append_content(filename, added_text):
@@ -103,7 +103,7 @@ append_content(filename, '\n' + added_text)
 # -------------------------------------------------------------------
 
 # Question 5
-# Write a program to read a file and store it into a list.
+# Read a file line by line and store it into a list.
 
 def list_format(filename):
     try:
@@ -119,7 +119,7 @@ list_format(filename)
 # -------------------------------------------------------------------
 
 # Question 6
-# Write a program to read a file line by line and store it into a variable.
+# Read a file line by line and store it into a variable.
 
 def store_line_as_variable(filename):
     try:
@@ -139,7 +139,7 @@ print store_line_as_variable(filename)
 # -------------------------------------------------------------------
 
 # Question 7
-# Write a program to find the longest words in a file.
+# Find the longest string(s) in a file.
 
 # To preface this question we will show examples of how to break the files contents into pieces
 with open("test.txt", "r") as foo:
@@ -230,7 +230,7 @@ print "Longest word(s) in file {} are: {}".format(filename, longestWord)
 # -------------------------------------------------------------------
 
 # Question 8
-# Write a program to count the number of lines in a text file.
+# Count the number of lines in a text file.
 
 def line_count(filename):
     try:
@@ -250,7 +250,7 @@ print "There are {} lines in the file {}".format(lineCount, filename)
 # -------------------------------------------------------------------
 
 # Question 9
-# Write a program to count the frequency of words in a file.  Also display the top 3
+# Count the frequency of words in a file.  Also display the top 3.
 
 def word_frequency(filename):
     try:
@@ -268,7 +268,7 @@ print "Top three words that occurred the most: {}\n".format(topThree)
 # -------------------------------------------------------------------
 
 # Question 10
-# Write a program to count the frequency of letters/numbers/symbols in a file.
+# Count the frequency of letters/numbers/symbols in a file.
 
 def character_frequency(filename):
     with open(filename, "r") as foo:
@@ -283,7 +283,7 @@ print '\n'
 # -------------------------------------------------------------------
 
 # Question 11
-# Write a program to count the frequency of equivalent lines in a file.
+# Count the frequency of equivalent lines in a file.
 
 def line_frequency(filename):
     with open(filename, "r") as foo:
@@ -297,7 +297,7 @@ print '\n'
 # -------------------------------------------------------------------
 
 # Question 12
-# Write a program to get the file size of a plain file
+# Get the file size of a plain file.
 def file_size(filename):
     try:
         with open(filename, "r") as foo:
@@ -313,7 +313,7 @@ print "Size of File: {}".format(file_size(filename))
 # -------------------------------------------------------------------
 
 # Question 13
-# Write a program to write a list to a file
+# Write a list to a file.
 
 # BECAREFUL.  If filename exists it will overwrite files contents. (Addressed in Q14)
 # Use the append file permission instead if you wish to append the list at the end of a file.
@@ -362,7 +362,7 @@ else:
 # -------------------------------------------------------------------
 
 # Question 15
-# Write a program to copy the contents of a file to another file
+# Copy the contents of a file to another file.
 def copy_contents(originalFile, newFile):
     try:
         with open(originalFile) as originalCopy:
@@ -383,7 +383,7 @@ copyfile(originalFile, newFile)
 # -------------------------------------------------------------------
 
 # Question 16
-# Write a program to append a files contents to another file.
+# Append a files contents to another file.
 
 def append_to(originalFile, appendedToFile):
     try:
@@ -443,7 +443,7 @@ is_closed(filename)
 # -------------------------------------------------------------------
 
 # Question 19
-# Write a Python program to read a random line from a file.
+# Read a random line from a file.
 
 def random_line(filename):
     try:
