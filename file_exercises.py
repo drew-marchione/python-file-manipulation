@@ -436,8 +436,7 @@ def is_closed(filename):
     except IOError:
         print "{} does not exist! Enter a file that exists".format(filename)
 
-#filename = raw_input("Enter file name: ")
-filename = 'test.txt'
+filename = raw_input("Enter file name: ")
 is_closed(filename)
 
 # -------------------------------------------------------------------
@@ -454,8 +453,7 @@ def random_line(filename):
         print "{} does not exist! Enter a file that exists".format(filename)
         return IOError
 
-#filename = raw_input("Enter file name: ")
-filename = 'test.txt'
+filename = raw_input("Enter file name: ")
 value = random_line(filename)
 if value != IOError:
     print "Random line from {}: ".format(filename), value
